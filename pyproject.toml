@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "mcmc-playground"
+version = "0.1.0"
+description = ""
+authors = ["Jack Sheridan <jacksheridan91@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+pymc = "^5.10.0"
+torch = "^2.1.1"
+seaborn = "^0.13.0"
+arviz = "^0.16.1"
+notebook = "^7.0.6"
+polars = "^0.19.19"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.7"
+mypy = "^1.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
